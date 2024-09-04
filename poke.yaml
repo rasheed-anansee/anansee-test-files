@@ -1,0 +1,1782 @@
+openapi: 3.0.0
+info:
+    description: "All the Pokémon data you'll ever need in one place, easily accessible through a modern free open-source RESTful API."
+    title: "poke api"
+    version: "0.0.1"
+paths:
+    /api/v2/ability/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: ability_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+                      type: integer
+            tags:
+                - ability
+    /api/v2/ability/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: ability_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this ability.
+                      type: integer
+            tags:
+                - ability
+    /api/v2/berry-firmness/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry-firmness_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - berry-firmness
+    /api/v2/berry-firmness/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry-firmness_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this berry firmness.
+
+                      type: integer
+            tags:
+                - berry-firmness
+    /api/v2/berry-flavor/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry-flavor_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - berry-flavor
+    /api/v2/berry-flavor/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry-flavor_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this berry flavor.
+
+                      type: integer
+            tags:
+                - berry-flavor
+    /api/v2/berry/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - berry
+    /api/v2/berry/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: berry_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this berry.
+
+                      type: integer
+            tags:
+                - berry
+    /api/v2/characteristic/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: characteristic_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - characteristic
+    /api/v2/characteristic/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: characteristic_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this characteristic.
+
+                      type: integer
+            tags:
+                - characteristic
+    /api/v2/contest-effect/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: contest-effect_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - contest-effect
+    /api/v2/contest-effect/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: contest-effect_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this contest effect.
+
+                      type: integer
+            tags:
+                - contest-effect
+    /api/v2/contest-type/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: contest-type_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - contest-type
+    /api/v2/contest-type/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: contest-type_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this contest type.
+
+                      type: integer
+            tags:
+                - contest-type
+    /api/v2/egg-group/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: egg-group_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - egg-group
+    /api/v2/egg-group/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: egg-group_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this egg group.
+
+                      type: integer
+            tags:
+                - egg-group
+    /api/v2/encounter-condition-value/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-condition-value_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - encounter-condition-value
+    /api/v2/encounter-condition-value/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-condition-value_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this encounter condition
+                          value.
+
+                      type: integer
+            tags:
+                - encounter-condition-value
+    /api/v2/encounter-condition/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-condition_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - encounter-condition
+    /api/v2/encounter-condition/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-condition_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this encounter condition.
+
+                      type: integer
+            tags:
+                - encounter-condition
+    /api/v2/encounter-method/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-method_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - encounter-method
+    /api/v2/encounter-method/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: encounter-method_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this encounter method.
+
+                      type: integer
+            tags:
+                - encounter-method
+    /api/v2/evolution-chain/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: evolution-chain_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - evolution-chain
+    /api/v2/evolution-chain/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: evolution-chain_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this evolution chain.
+
+                      type: integer
+            tags:
+                - evolution-chain
+    /api/v2/evolution-trigger/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: evolution-trigger_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - evolution-trigger
+    /api/v2/evolution-trigger/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: evolution-trigger_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this evolution trigger.
+
+                      type: integer
+            tags:
+                - evolution-trigger
+    /api/v2/gender/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: gender_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - gender
+    /api/v2/gender/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: gender_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this gender.
+
+                      type: integer
+            tags:
+                - gender
+    /api/v2/generation/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: generation_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - generation
+    /api/v2/generation/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: generation_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this generation.
+
+                      type: integer
+            tags:
+                - generation
+    /api/v2/growth-rate/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: growth-rate_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - growth-rate
+    /api/v2/growth-rate/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: growth-rate_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this growth rate.
+
+                      type: integer
+            tags:
+                - growth-rate
+    /api/v2/item-attribute/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-attribute_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - item-attribute
+    /api/v2/item-attribute/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-attribute_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this item attribute.
+
+                      type: integer
+            tags:
+                - item-attribute
+    /api/v2/item-category/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-category_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - item-category
+    /api/v2/item-category/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-category_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this item category.
+
+                      type: integer
+            tags:
+                - item-category
+    /api/v2/item-fling-effect/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-fling-effect_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - item-fling-effect
+    /api/v2/item-fling-effect/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-fling-effect_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this item fling effect.
+
+                      type: integer
+            tags:
+                - item-fling-effect
+    /api/v2/item-pocket/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-pocket_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - item-pocket
+    /api/v2/item-pocket/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item-pocket_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this item pocket.
+
+                      type: integer
+            tags:
+                - item-pocket
+    /api/v2/item/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - item
+    /api/v2/item/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: item_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this item.
+
+                      type: integer
+            tags:
+                - item
+    /api/v2/language/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: language_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - language
+    /api/v2/language/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: language_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this language.
+
+                      type: integer
+            tags:
+                - language
+    /api/v2/location-area/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: location-area_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - location-area
+    /api/v2/location-area/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: location-area_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this location area.
+
+                      type: integer
+            tags:
+                - location-area
+    /api/v2/location/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: location_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - location
+    /api/v2/location/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: location_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this location.
+
+                      type: integer
+            tags:
+                - location
+    /api/v2/machine/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: machine_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - machine
+    /api/v2/machine/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: machine_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this machine.
+
+                      type: integer
+            tags:
+                - machine
+    /api/v2/move-ailment/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-ailment_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-ailment
+    /api/v2/move-ailment/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-ailment_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move meta ailment.
+
+                      type: integer
+            tags:
+                - move-ailment
+    /api/v2/move-battle-style/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-battle-style_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-battle-style
+    /api/v2/move-battle-style/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-battle-style_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move battle style.
+
+                      type: integer
+            tags:
+                - move-battle-style
+    /api/v2/move-category/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-category_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-category
+    /api/v2/move-category/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-category_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move meta category.
+
+                      type: integer
+            tags:
+                - move-category
+    /api/v2/move-damage-class/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-damage-class_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-damage-class
+    /api/v2/move-damage-class/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-damage-class_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move damage class.
+
+                      type: integer
+            tags:
+                - move-damage-class
+    /api/v2/move-learn-method/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-learn-method_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-learn-method
+    /api/v2/move-learn-method/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-learn-method_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move learn method.
+
+                      type: integer
+            tags:
+                - move-learn-method
+    /api/v2/move-target/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-target_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move-target
+    /api/v2/move-target/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move-target_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move target.
+
+                      type: integer
+            tags:
+                - move-target
+    /api/v2/move/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - move
+    /api/v2/move/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: move_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this move.
+
+                      type: integer
+            tags:
+                - move
+    /api/v2/nature/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: nature_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - nature
+    /api/v2/nature/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: nature_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this nature.
+
+                      type: integer
+            tags:
+                - nature
+    /api/v2/pal-park-area/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pal-park-area_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pal-park-area
+    /api/v2/pal-park-area/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pal-park-area_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pal park area.
+
+                      type: integer
+            tags:
+                - pal-park-area
+    /api/v2/pokeathlon-stat/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokeathlon-stat_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokeathlon-stat
+    /api/v2/pokeathlon-stat/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokeathlon-stat_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokeathlon stat.
+
+                      type: integer
+            tags:
+                - pokeathlon-stat
+    /api/v2/pokedex/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokedex_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokedex
+    /api/v2/pokedex/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokedex_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokedex.
+
+                      type: integer
+            tags:
+                - pokedex
+    /api/v2/pokemon-color/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-color_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon-color
+    /api/v2/pokemon-color/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-color_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon color.
+
+                      type: integer
+            tags:
+                - pokemon-color
+    /api/v2/pokemon-form/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-form_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon-form
+    /api/v2/pokemon-form/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-form_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon form.
+
+                      type: integer
+            tags:
+                - pokemon-form
+    /api/v2/pokemon-habitat/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-habitat_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon-habitat
+    /api/v2/pokemon-habitat/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-habitat_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon habitat.
+
+                      type: integer
+            tags:
+                - pokemon-habitat
+    /api/v2/pokemon-shape/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-shape_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon-shape
+    /api/v2/pokemon-shape/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-shape_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon shape.
+
+                      type: integer
+            tags:
+                - pokemon-shape
+    /api/v2/pokemon-species/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-species_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon-species
+    /api/v2/pokemon-species/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon-species_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon species.
+
+                      type: integer
+            tags:
+                - pokemon-species
+    /api/v2/pokemon/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - pokemon
+    /api/v2/pokemon/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: pokemon_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this pokemon.
+
+                      type: integer
+            tags:
+                - pokemon
+    /api/v2/region/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: region_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - region
+    /api/v2/region/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: region_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this region.
+
+                      type: integer
+            tags:
+                - region
+    /api/v2/stat/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: stat_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - stat
+    /api/v2/stat/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: stat_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this stat.
+
+                      type: integer
+            tags:
+                - stat
+    /api/v2/super-contest-effect/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: super-contest-effect_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - super-contest-effect
+    /api/v2/super-contest-effect/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: super-contest-effect_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this super contest effect.
+
+                      type: integer
+            tags:
+                - super-contest-effect
+    /api/v2/type/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: type_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - type
+    /api/v2/type/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: type_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this type.
+
+                      type: integer
+            tags:
+                - type
+    /api/v2/version-group/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: version-group_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - version-group
+    /api/v2/version-group/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: version-group_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this version group.
+
+                      type: integer
+            tags:
+                - version-group
+    /api/v2/version/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: version_list
+            parameters:
+                - in: query
+                  name: limit
+                  schema:
+                      description: Number of results to return per page.
+
+                      type: integer
+                - in: query
+                  name: offset
+                  schema:
+                      description: The initial index from which to return the results.
+
+                      type: integer
+            tags:
+                - version
+    /api/v2/version/{id}/:
+        get:
+            responses:
+                200:
+                    description: ""
+            operationId: version_read
+            parameters:
+                - in: path
+                  name: id
+                  required: true
+                  schema:
+                      description: A unique integer value identifying this version.
+
+                      type: integer
+            tags:
+                - version
+servers:
+    - url: "https://pokeapi.co"
